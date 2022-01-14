@@ -22,8 +22,16 @@ scene.add(mesh)
 
 // Axes helper
 
-const axesHelper =  new THREE.AxesHelper()
+const axesHelper =  new THREE.AxesHelper(2)
 scene.add(axesHelper)
+
+//scale
+
+// mesh.scale.x=2
+// mesh.scale.y=0.5
+// mesh.scale.z=0.5
+mesh.scale.set(0.5,0.5,0.5)
+
 
 console.log(mesh.position.length())
 //console.log(mesh.position.distanceTo(new THREE.Vector3(0,1,2)))
